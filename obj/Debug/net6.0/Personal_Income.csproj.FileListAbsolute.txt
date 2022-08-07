@@ -24,4 +24,4 @@ C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\refint\Personal_Income.d
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\Personal_Income.pdb
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\Personal_Income.genruntimeconfig.cache
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\ref\Personal_Income.dll
-C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\Home\Index.cshtml.rz.scp.css
+C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\Home\Home.cshtml.rz.scp.css
