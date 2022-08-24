@@ -15,14 +15,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Yanky\Desktop\Personal_Income
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Yanky/Desktop/Personal_Income/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Yanky/Desktop/Personal_Income/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Yanky/Desktop/Personal_Income/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Yanky/Desktop/Personal_Income/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-gzrsfe81qs
+[C:/Users/Yanky/Desktop/Personal_Income/Views/Shared/Log_In_And_Register_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ19Jbl9BbmRfUmVnaXN0ZXJfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-hfdvpby9cg
+
+[C:/Users/Yanky/Desktop/Personal_Income/Views/Sign_In_Sign_Up/Sign_In.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbl9Jbl9TaWduX1VwXFNpZ25fSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rffb5nrk4g

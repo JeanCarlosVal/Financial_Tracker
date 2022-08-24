@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\wwwroot\\Assets"
   ],
+  "SelectedNode": "\\wwwroot",
   "PreviewInSolutionExplorer": false
 }

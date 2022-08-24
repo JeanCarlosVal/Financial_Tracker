@@ -1,18 +1,59 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.background-image {
+    background-image: url(../Assets/Sign_In_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(../Assets/Fonts/FiraSans-Bold.ttf);
+    font-family: FiraSans;
+}
+
+@font-face {
+    src: url(../Assets/Fonts/FiraSans-Light.ttf);
+    font-family: FiraSansThin
+}
+
+.FiraSans-font {
+    font-family: FiraSans;
+}
+
+.FiraSans-light-font {
+    font-family: FiraSansThin;
+}
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.fixed-button {
+    width: 150px;
+    height: 38px;
+    margin: 50px 10px 10px 240px;
+}
+
+.no-margin {
+    margin: 0px, 0px, 0px, 0px;
 }

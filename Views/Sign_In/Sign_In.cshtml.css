@@ -1,0 +1,42 @@
+﻿.sign-in-title {
+    font-size: 45px;
+    line-height: 140px;
+    margin-bottom: 0px;
+    height: 120px;
+}
+
+.label {
+    padding-left: 30px;
+}
+
+.input-position {
+    padding-left: 15px;
+    padding-right: 35px;
+}
+
+.submit-button {
+    margin: 20px 0px 32px 130px;
+    width: 150px;
+}
+
+.register-message {
+    margin: 0px 0px 0px 155px;
+}
+
+.logo-container {
+    width: 400px;
+    height: 400px;
+    margin-top: 170px;
+    margin-left: 20px;
+}
+
+.left-col {
+    padding-left: 25px;
+}
+
+.server-message {
+    width: 1000px;
+    height: 58px;
+    top: 94.5px;
+    left: 354px;
+}

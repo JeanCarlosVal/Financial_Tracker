@@ -1,0 +1,77 @@
+﻿@model Sign_In_Model
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+
+@section Error{
+    @if (Model.Error)
+    {
+        <div class="alert alert-danger fade show server-message" role="alert">
+            It looks like you have entered an invalid Email Address or Password
+        </div>
+    }
+
+}
+
+    <div class="container no-padding">
+        <div class="row">
+            <form class="col needs-validation" method="post" novalidate>
+                <div class="col left-col">
+                    <div class="row text-center">
+                        <p class="sign-in-title FiraSans-light-font"> Sign In </p>
+                    </div>
+                    <div>
+                        @*Email Input*@
+                        <p class="FiraSans-font input-position">Email Address:</p>
+                    </div>
+                    <div class="form-floating input-position">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" asp-for="Email_Address" required />
+                        <label for="email" class="label FiraSans-light-font">
+                            Email Address
+                        </label>
+                        <div class="invalid-tooltip">
+                            Provide a valid Email Address
+                        </div>
+                    </div>
+                    <br />
+                    <div>
+                        @*password Input*@
+                        <p class="FiraSans-font input-position">Password:</p>
+                    </div>
+                    <div class="input-group mb-3 form-floating input-position">
+                        <input type="password" class="form-control password" id="password" placeholder=" " asp-for="Password" required />
+                        <span class="input-group-text togglePassword" id="">
+                            <i data-feather="eye" style="cursor: pointer"></i>
+                        </span>
+                        <label for="password" class="label FiraSans-light-font">
+                            Password
+                        </label>
+                        <div class="invalid-tooltip">
+                            Provide a Password
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-success submit-button FiraSans-font" type="submit"> Sign In</button>
+                    </div>
+                    <div>
+                        @*link to sign up page*@
+                        <p class="FiraSans-font input-position register-message">
+                            Don't Have An Account?
+                            <a class="FiraSans-font text-primary" asp-area="" asp-controller="Sign_In" asp-action="Sign_Up"> Sign Up</a>
+                        </p>
+                    </div>
+                </div>
+            </form>
+
+            <div class="col">
+                <div class="logo-container">
+                    <img src="~/Assets/Logo.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>

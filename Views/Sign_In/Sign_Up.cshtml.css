@@ -1,0 +1,35 @@
+﻿.title {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.fixed-title {
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 100px
+}
+
+.fixed-margin {
+    margin: 10px 10px 15px 40px;
+}
+
+.fixed-labels {
+    padding-left: 30px;
+}
+
+.input-fixed-width {
+    width: 380px;
+}
+
+.fixed-margin-1 {
+    margin: 10px 10px 15px 10px;
+}
+
+.fixed-labels-1 {
+    padding-left: 30px;
+}
+
+.fixed-link {
+    margin: 25px 0px 0px 220px;
+    height: 50px;
+}
