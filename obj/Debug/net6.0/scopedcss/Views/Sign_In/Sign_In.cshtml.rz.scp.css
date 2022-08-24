@@ -36,9 +36,5 @@
 
 .server-message[b-mrs3wc6fxg] {
     width: 1000px;
-    height: 58px;
-    top: 15.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     position:absolute;
 }

@@ -10,6 +10,19 @@
     transform: translate(-50%,-50%);
     padding-left: 0px;
     padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
+}
+
+.error[b-hfdvpby9cg] {
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
 }
 /* _content/Personal_Income/Views/Sign_In/Sign_In.cshtml.rz.scp.css */
 .sign-in-title[b-mrs3wc6fxg] {
@@ -50,10 +63,6 @@
 
 .server-message[b-mrs3wc6fxg] {
     width: 1000px;
-    height: 58px;
-    top: 15.5%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     position:absolute;
 }
 /* _content/Personal_Income/Views/Sign_In/Sign_Up.cshtml.rz.scp.css */

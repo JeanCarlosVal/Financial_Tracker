@@ -9,4 +9,17 @@
     transform: translate(-50%,-50%);
     padding-left: 0px;
     padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
+}
+
+.error[b-hfdvpby9cg] {
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
 }

@@ -11,7 +11,9 @@
 
 <body>
     <div class="background-image">
-       @RenderSection("Error", false)
+        <div class="error container">
+            @RenderSection("Error", false)
+        </div>
         <div class="sign-in container shadow-lg bg-light rounded">
             @RenderBody()
         </div>
