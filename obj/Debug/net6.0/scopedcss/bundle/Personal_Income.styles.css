@@ -51,8 +51,10 @@
 .server-message[b-mrs3wc6fxg] {
     width: 1000px;
     height: 58px;
-    top: 94.5px;
-    left: 354px;
+    top: 15.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
 }
 /* _content/Personal_Income/Views/Sign_In/Sign_Up.cshtml.rz.scp.css */
 .title[b-iafswrmhpd] {
