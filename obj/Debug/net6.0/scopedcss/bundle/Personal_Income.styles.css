@@ -101,3 +101,129 @@
     margin: 25px 0px 0px 220px;
     height: 50px;
 }
+/* _content/Personal_Income/Views/User/User_Home_Layout.cshtml.rz.scp.css */
+.btn-primary[b-ex545kcm59] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ex545kcm59], .nav-pills .show > .nav-link[b-ex545kcm59] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-top[b-ex545kcm59] {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-ex545kcm59] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ex545kcm59] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ex545kcm59] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-ex545kcm59] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.navbar-height[b-ex545kcm59]{
+    height: 100px;
+}
+
+.navbar-container-height[b-ex545kcm59]{
+    height: 67px;
+}
+
+
+.logo-image[b-ex545kcm59] {
+    height: 95px;
+    width: 100px;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+.link-font-size[b-ex545kcm59]{
+    font-size: 35px;
+}
+
+/* The sidebar menu */
+.sidebar[b-ex545kcm59] {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+    /* The sidebar links */
+    .sidebar a[b-ex545kcm59] {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidebar a:hover[b-ex545kcm59] {
+            color: #f1f1f1;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .sidebar .closebtn[b-ex545kcm59] {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+/* The button used to open the sidebar */
+.openbtn[b-ex545kcm59] {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+    .openbtn:hover[b-ex545kcm59] {
+        background-color: #444;
+    }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main[b-ex545kcm59] {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar[b-ex545kcm59] {
+        padding-top: 15px;
+    }
+
+        .sidebar a[b-ex545kcm59] {
+            font-size: 18px;
+        }
+}

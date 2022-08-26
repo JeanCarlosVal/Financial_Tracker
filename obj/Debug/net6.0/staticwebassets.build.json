@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PC42i14w2TCv9zu7peM9BvwEIZHJFAV0LlcSoQLFpDw=",
+  "Hash": "IL0dxuOjB/nXKltk9AYGdTy5MeiTQL5a8bHBaDg4ujI=",
   "Source": "Personal_Income",
   "BasePath": "_content/Personal_Income",
   "Mode": "Default",
@@ -712,6 +712,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Assets\\Logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Yanky\\Desktop\\Personal_Income\\wwwroot\\Assets\\Logo_2.png",
+      "SourceId": "Personal_Income",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yanky\\Desktop\\Personal_Income\\wwwroot\\",
+      "BasePath": "_content/Personal_Income",
+      "RelativePath": "Assets/Logo_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\Logo_2.png"
     },
     {
       "Identity": "C:\\Users\\Yanky\\Desktop\\Personal_Income\\wwwroot\\Assets\\Sign_In_Background.jpg",

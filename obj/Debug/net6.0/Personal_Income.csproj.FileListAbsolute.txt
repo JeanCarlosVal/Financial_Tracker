@@ -66,3 +66,4 @@ C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\runtimes\win-x86\native\
 C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\Dapper.dll
+C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\User_Home_Layout.cshtml.rz.scp.css
