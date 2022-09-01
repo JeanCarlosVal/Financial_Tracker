@@ -9,28 +9,27 @@
     <link rel="stylesheet" href="~/Personal_Income.styles.css" asp-append-version="true" />
 </head>
 
-<body id="main">
+<body>
 
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar shadow-lg">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a class="FiraSans-light-font" asp-controller="User" asp-action="Profile">Profile</a>
+        <a class="FiraSans-light-font" asp-controller="User" asp-action="Dashboard">Dashboard</a>
+        <a class="FiraSans-light-font" asp-controller="User" asp-action="New_Activity">Record New Activity</a>
     </div>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow py-3 navbar-height">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white border-bottom shadow-lg py-3 navbar-height">
             <div class="container-fluid navbar-container-height">
-                <a class="mx-5" asp-area="" asp-controller="User" asp-action="Dashboard">
-                    <div class="logo-image">
+                <a class="mx-5 animation" asp-area="" asp-controller="User" asp-action="Dashboard">
+                    <div class="logo-image animation" id="main">
                         <img src="~/Assets/Logo_2.png" class="img-fluid" />
                     </div>
                 </a>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between navbar-container-height">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <p class="m-0 link-font-size FiraSans-light-font">Dashboard</p>
+                        <li class="nav-item no-padding">
+                            @RenderSection("Title",false)
                         </li>
                     </ul>
                 </div>
@@ -40,7 +39,9 @@
 
     <div>
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-         @RenderBody()
+        <div id="main" class="animation">
+            @RenderBody()
+        </div>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -11,6 +11,7 @@ namespace Personal_Income.Controllers
     {
         public const string SessionKeyName = "_UserName";
         public const string SessionKeyID = "_ID";
+        public const string SessionKeyEmail = "_Email";
 
         private readonly ILogger<Sign_InController> _logger;
         private readonly IConfiguration _configuration;
@@ -40,8 +41,10 @@ namespace Personal_Income.Controllers
                 if (!output.Count.Equals(0))
                 {
 
-                    //HttpContext.Session.SetString("SessionKeyName", output[0].USERNAME);
-                    //HttpContext.Session.SetInt32("SessionKeyID", output[0].USERID);
+                    HttpContext.Session.SetString("SessionKeyName", output[0].USERNAME);
+                    HttpContext.Session.SetInt32("SessionKeyID", output[0].USERID);
+                    HttpContext.Session.SetString("SessionKeyEmail", output[0].USEREMAIL);
+
                     return RedirectToAction("Dashboard","User");
                 }
                 else

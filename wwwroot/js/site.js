@@ -39,12 +39,19 @@ $(".togglePassword").click(function (e) {
 });
 
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidebar").style.width = "190px";
+
+    var elements = document.getElementsByClassName("animation");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.marginLeft = "190px"
+    }
 }
 
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+
+    var elements = document.getElementsByClassName("animation");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.marginLeft = "0px"
+    }
 }

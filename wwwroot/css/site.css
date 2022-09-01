@@ -32,14 +32,41 @@ html {
 
 @font-face {
     src: url(../Assets/Fonts/FiraSans-Light.ttf);
-    font-family: FiraSansThin
+    font-family: FiraSansLight;
+}
+
+@font-face {
+    src: url(../Assets/Fonts/FiraSans-ExtraBold.ttf);
+    font-family: FiraSansExtraBold;
+}
+
+@font-face {
+    src: url(../Assets/Fonts/FiraSans-Black.ttf);
+    font-family: FiraSansBlack;
+}
+
+@font-face {
+    src: url(../Assets/Fonts/FiraSans-Thin.ttf);
+    font-family: FiraSansThin;
 }
 
 .FiraSans-font {
     font-family: FiraSans;
 }
 
+.FiraSans-Black {
+    font-family: FiraSansBlack;
+}
+
+.FiraSans-ExtraBold {
+    font-family: FiraSansExtraBold;
+}
+
 .FiraSans-light-font {
+    font-family: FiraSansLight;
+}
+
+.FiraSans-thin {
     font-family: FiraSansThin;
 }
 
@@ -56,4 +83,71 @@ html {
 
 .no-margin {
     margin: 0px, 0px, 0px, 0px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00E400;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    border-radius: 0 50px 50px 0;
+    shado
+}
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #FFFFFF;
+        display: block;
+        transition: 0.5s;
+    }
+
+        .sidebar a:hover {
+            color: #FFE5B4;
+        }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #00E400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+    .openbtn:hover {
+        background-color: #7CFC00;
+    }
+
+#main {
+    transition: 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+}
+
+.link-font-size {
+    font-size: 35px;
 }

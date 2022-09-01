@@ -15,6 +15,19 @@ namespace Personal_Income.Controllers
         
         public IActionResult Dashboard()
         {
+            ViewBag.UserID = HttpContext.Session.GetInt32("SessionKeyID");
+            ViewBag.UserName = HttpContext.Session.GetString("SessionKeyName");
+            ViewBag.UserEmail = HttpContext.Session.GetString("SessionKeyEmail");
+            return View();
+        }
+
+        public IActionResult New_Activity()
+        {
+            return View();
+        }
+
+        public IActionResult Profile()
+        {
             return View();
         }
 
