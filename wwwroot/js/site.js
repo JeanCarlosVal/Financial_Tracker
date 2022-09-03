@@ -38,12 +38,19 @@ $(".togglePassword").click(function (e) {
     }
 });
 
+//nav open and close effect 
 function openNav() {
     document.getElementById("mySidebar").style.width = "190px";
 
     var elements = document.getElementsByClassName("animation");
+    var content = document.getElementsByClassName("content-animation");
+
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.marginLeft = "190px"
+    }
+
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.left = "56%";
     }
 }
 
@@ -51,7 +58,13 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
 
     var elements = document.getElementsByClassName("animation");
+    var content = document.getElementsByClassName("content-animation");
+
     for (var i = 0; i < elements.length; i++) {
-        elements[i].style.marginLeft = "0px"
+        elements[i].style.marginLeft = "0px";
+    }
+
+    for (var i = 0; i < content.length; i++) {
+        content[i].style.left = "50%";
     }
 }

@@ -109,6 +109,20 @@
 .title-padding[b-l9gtv59e9a]{
     margin-left: 100px;
 }
+/* _content/Personal_Income/Views/User/New_Activity.cshtml.rz.scp.css */
+.new-activity[b-zwk0x34xi6] {
+    width: 1000px;
+    height: 500px;
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
+    transition: 0.5s;
+}
+/* _content/Personal_Income/Views/User/Profile.cshtml.rz.scp.css */
 /* _content/Personal_Income/Views/User/User_Home_Layout.cshtml.rz.scp.css */
 .btn-primary[b-ex545kcm59] {
     color: #fff;

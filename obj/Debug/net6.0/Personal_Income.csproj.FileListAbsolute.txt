@@ -68,3 +68,5 @@ C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\runtimes\win\lib\netcore
 C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\Dapper.dll
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\User_Home_Layout.cshtml.rz.scp.css
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\Dashboard.cshtml.rz.scp.css
+C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\New_Activity.cshtml.rz.scp.css
+C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\Profile.cshtml.rz.scp.css
