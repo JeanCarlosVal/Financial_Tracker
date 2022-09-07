@@ -1,4 +1,6 @@
-﻿@{
+﻿@model RecordModel
+
+@{
     Layout = "User_Home_Layout.cshtml";
 }
 
@@ -7,6 +9,64 @@
 }
 
 
-    <div class="new-activity shadow-lg rounded-5 content-animation">
-
-    </div>
+    <form method="post" class="needs-validation" novalidate>
+        <div class="new-activity shadow-lg rounded-5 content-animation form-background">
+            <div class="row activity-div">
+                <p class="FiraSans-font"> Activity Name:</p>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="ActivityName" placeholder=" " asp-for="ActivityName" required />
+                    <label class="FiraSans-light-font fixed-labels-1" for="ActivityName">
+                        Activity Name
+                    </label>
+                    <div class="invalid-tooltip">
+                        Provide a Name for the Activity  
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="activity-div">
+                        <p class="FiraSans-font"> Activity Cost:</p>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="ActivityCost" placeholder=" " asp-for="ActivityCost" required />
+                            <label class="FiraSans-light-font fixed-labels-1" for="ActivityCost">
+                                Activity Cost
+                            </label>
+                            <div class="invalid-tooltip">
+                                Provide a Cost for the Activity
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-div">
+                        <p class="FiraSans-font"> Activity Type:</p>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="ActivityType" placeholder=" " asp-for="ActivityType" required />
+                            <label class="FiraSans-light-font fixed-labels-1" for="ActivityType">
+                                Activity Type
+                            </label>
+                            <div class="invalid-tooltip">
+                                Provide a Type for the Activity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="activity-div">
+                        <p class="FiraSans-font"> Activity Date:</p>
+                        <div class="form-floating">
+                            <input type="date" class="form-control" id="ActivityDate" placeholder=" " asp-for="ActivityDate" required />
+                            <label class="FiraSans-light-font fixed-labels-1" for="ActivityDate">
+                                Activity Date
+                            </label>
+                            <div class="invalid-tooltip">
+                                Provide a Date for the Activity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row activity-div">
+                <button type="submit" class="btn btn-success activity-button button-background FiraSans-font"> Record Activty </button>
+            </div>
+        </div>
+    </form>

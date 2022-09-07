@@ -1,7 +1,49 @@
 .new-activity[b-zwk0x34xi6] {
-    width: 1000px;
+    width: 1150px;
     height: 500px;
-    position:absolute;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
+    transition: 0.5s;
+}
+
+.activity-div[b-zwk0x34xi6] {
+    padding: 20px 50px 5px 50px;
+}
+
+.fixed-labels-1[b-zwk0x34xi6] {
+    padding-left: 30px;
+}
+
+.activity-button[b-zwk0x34xi6] {
+    margin-top: 30px;
+}
+
+.form-background[b-zwk0x34xi6]{
+    background: #ffffff;
+}
+
+.success[b-zwk0x34xi6] {
+    width: 1150px;
+    height: 500px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px, 5px, 5px, 5px;
+    transition: 0.5s;
+}
+
+.error[b-zwk0x34xi6] {
+    width: 1150px;
+    height: 500px;
+    position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);

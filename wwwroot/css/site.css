@@ -97,7 +97,6 @@ html {
     padding-top: 60px;
     transition: 0.5s;
     border-radius: 0 50px 50px 0;
-    shado
 }
 
     .sidebar a {
@@ -150,4 +149,16 @@ html {
 
 .link-font-size {
     font-size: 35px;
+}
+
+.user-background{
+    background-color: #C5C6D0;
+}
+
+.background-color-edit {
+    background: #dadada
+}
+
+.button-background {
+    background-color: #00E400;
 }

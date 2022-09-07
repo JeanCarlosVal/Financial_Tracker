@@ -50,7 +50,7 @@ function openNav() {
     }
 
     for (var i = 0; i < content.length; i++) {
-        content[i].style.left = "56%";
+        content[i].style.left = "56.5%";
     }
 }
 
