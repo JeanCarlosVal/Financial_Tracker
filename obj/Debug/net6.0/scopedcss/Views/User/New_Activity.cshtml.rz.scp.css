@@ -31,7 +31,7 @@
     width: 1150px;
     height: 500px;
     position: absolute;
-    top: 55%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding-left: 0px;
@@ -44,11 +44,19 @@
     width: 1150px;
     height: 500px;
     position: absolute;
-    top: 55%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding-left: 0px;
     padding-right: 0px;
     margin: 5px, 5px, 5px, 5px;
     transition: 0.5s;
+}
+
+.error-msg[b-zwk0x34xi6] {
+    height: 100px;
+}
+
+.success-msg[b-zwk0x34xi6] {
+    height: 100px;
 }

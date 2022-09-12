@@ -70,3 +70,10 @@ C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\Use
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\Dashboard.cshtml.rz.scp.css
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\New_Activity.cshtml.rz.scp.css
 C:\Users\Yanky\Desktop\Personal_Income\obj\Debug\net6.0\scopedcss\Views\User\Profile.cshtml.rz.scp.css
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\NPOI.OOXML.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\NPOI.OpenXml4Net.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\NPOI.OpenXmlFormats.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\NPOI.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+C:\Users\Yanky\Desktop\Personal_Income\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll

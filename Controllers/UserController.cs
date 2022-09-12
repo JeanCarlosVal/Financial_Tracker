@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Personal_Income.Models;
 using System.Data;
 using System.Diagnostics;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Personal_Income.Controllers
 {
@@ -16,18 +18,27 @@ namespace Personal_Income.Controllers
             _logger = logger;
             _configuration = configuration;
         }
-        
+
         public IActionResult Dashboard()
         {
-            ViewBag.UserID = HttpContext.Session.GetInt32("SessionKeyID");
-            ViewBag.UserName = HttpContext.Session.GetString("SessionKeyName");
-            ViewBag.UserEmail = HttpContext.Session.GetString("SessionKeyEmail");
+            var session = HttpContext.Session.GetString("session");
+            var userSession = JsonSerializer.Deserialize<List<Log_In_Session>>(session!);
+
+            ViewBag.UserName = userSession?[0].USERNAME;
+
             return View();
         }
 
         public IActionResult New_Activity()
         {
-            return View(new RecordModel { Error = false, Success = false});
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(_configuration.GetConnectionString("CashFundDB")))
+            {
+                var Id = "";
+
+                var output = connection.Query<ActivityList>("dbo.spGetActivityType @ID",
+                    new { ID = Id }).ToList();
+            }
+                return View(new RecordModel { Error = false, Success = false });
         }
 
         public IActionResult Profile()
@@ -39,10 +50,15 @@ namespace Personal_Income.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult New_Activity(RecordModel record)
         {
+
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(_configuration.GetConnectionString("CashFundDB")))
             {
+                var Id = (int)HttpContext.Session.GetInt32("SessionKeyID")!;
+                var date = record.ActivityDate!.Replace("T", " ");
+                var cost = Decimal.Parse(record.ActivityCost!);
+
                 var output = connection.Query<ServerStatus>("dbo.spInsertRecord @ID,@Name,@Type,@Cost,@Date", 
-                    new {ID = ViewBag.UserID, Name = record.ActivityName, Type = record.ActivityType, Cost = record.ActivityCost, Date = record.ActivityDate}).ToList();
+                    new {ID = Id, Name = record.ActivityName, Type = record.ActivityType, Cost = cost, Date = date}).ToList();
 
                 if (output[0].STATUS == -1)
                 {

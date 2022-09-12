@@ -3,15 +3,14 @@ using Personal_Income.Models;
 using System.Diagnostics;
 using Dapper;
 using System.Data;
-using System.Linq;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Personal_Income.Controllers
 {
     public class Sign_InController : Controller
     {
-        public const string SessionKeyName = "_UserName";
-        public const string SessionKeyID = "_ID";
-        public const string SessionKeyEmail = "_Email";
+        public const string UserSession = "session";
 
         private readonly ILogger<Sign_InController> _logger;
         private readonly IConfiguration _configuration;
@@ -41,9 +40,7 @@ namespace Personal_Income.Controllers
                 if (!output.Count.Equals(0))
                 {
 
-                    HttpContext.Session.SetString("SessionKeyName", output[0].USERNAME);
-                    HttpContext.Session.SetInt32("SessionKeyID", output[0].USERID);
-                    HttpContext.Session.SetString("SessionKeyEmail", output[0].USEREMAIL);
+                    HttpContext.Session.SetString("session", JsonSerializer.Serialize(output));
 
                     return RedirectToAction("Dashboard","User");
                 }

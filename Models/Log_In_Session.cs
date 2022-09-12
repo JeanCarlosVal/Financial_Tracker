@@ -2,10 +2,10 @@
 {
     public class Log_In_Session
     {
-        public string USERNAME { get; set; }
+        public string? USERNAME { get; set; }
 
         public int USERID { get; set; }
 
-        public string USEREMAIL { get; set; }
+        public string? USEREMAIL { get; set; }
     }
 }
